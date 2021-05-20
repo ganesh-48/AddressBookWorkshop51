@@ -1,45 +1,102 @@
-html body {
+/*UC1*/
+body {
     margin: 0;
     height: 100%;
 }
+
+body {
+    background-color: lightgrey;
+    width: 1920px;
+    height: 1080px;
+    border: 1px solid rgb(231, 16, 149);
+    padding: 1px;
+    margin: 30px;
+    margin-left: 60px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    opacity: 1;
+  }
   
 .header {
     padding: 15px 0;
     background-color: #ffffff;
 }
-  
+
 .header-content {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    border: 0px solid rgb(32, 7, 170);
+    border: 0px solid #008CFF;
 }
-  
+
 .logo-content {
     display: flex;
     flex-direction: row;
     align-items: center;
-    border: 0px solid rgb(42, 8, 236);
+    border: 0px solid #008CFF;
     width: 80%;
 }
-  
+
 .logo-content-img {
-    border: solid 0px #3d0eeb;
+    border: solid 0px #42515f;
 }
-  
-.add-Book {
-    font: normal normal bold 22px/25px Montserrat;
+
+/*UC2*/
+.address-text {
+    font: normal normal bold 20px/25px Montserrat;
     font-family: "Montserrat", sans-serif;
     letter-spacing: 0px;
-    color: #170aca;
+    color: #008CFF;
     text-transform: capitalize;
 }
-  
-.add-Book {
-    color: #473e61;
+
+.address-book {
+    color: black;
 }
-  
-* {
-    box-sizing: boder-box;
+
+.form-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: gray;
+}
+
+.form {
+    width: 65%;
+    padding: 44px 60px;
+    background: white 0% 0% no-repeat padding-box;
+    border-radius: 8px;
+    opacity: 1;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.header-text {
+    font: normal normal normal 28px/37px Roboto;
+    letter-spacing: 0px;
+    color: white;
+    margin-left: 25%;
+}
+
+.form-head {
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+    opacity: 1;
+    min-height: 90px;
+    color: white;
+    font-size: large;
+    background: #008CFF 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+.cancel-img {
+    position: relative;
+    float: right;
+    max-width: 30px;
+    max-height: 30px;
+    cursor: pointer;
+    margin-left: 100px;
+    top: -50px;
+    right: -150px;
 }
