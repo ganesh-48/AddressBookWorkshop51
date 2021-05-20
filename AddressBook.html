@@ -31,7 +31,63 @@
                         <a href="D:\javascript\AddressBookWorkshop\AddressBook.html"><img class="cancel-img" src="D:\javascript\AddressBookWorkshop\cancel.jpg"></a>
                     </div>
                 </div>
-        </form>
         </div>
+
+        
+            <!--UC3 Creating fields as full name, phone number address, city, state and zip  -->
+
+            <div class="row-content">
+                <label class="label text" for="fullname">Full Name
+               <input class="input" type="text" id="fullName" name="fullName" placeholder="" required>
+               <error-output class="text-error" for="text"></error-output>
+               </label>
+            </div>
+
+            <div class="row-content">
+                <label class="label text" for="phone">Phone Number
+                <input type="tel" id="tel" name="tel" class="input">
+                <error-output class ="text-error" for="text"></error-output>
+                </label>
+            </div>
+
+            <div class="row-content">
+                <label class="label text" for="address">Address
+                <input class="input address-input" type="text" id="address" placeholder="" required>
+                <error-output class ="text-error" for="text"></error-output>
+                </label>
+            </div>
+
+           <div class="select-input-fields">
+                <label class="label text" for="city">City
+                <select id="city" name="city">
+                    <option value="" disabled selected hidden>Select City</option>
+                    <option value="Pune">Pune</option>
+                    <option value="Mumbai">Mumbai</option>
+                    <option value="Solapur">Solapur</option>
+                    <option value="Kholhapur">Kholhapur</option>
+                    <option value="Nashik">Nashik</option>
+                    <option value="Nandurbar">Nandurbar</option>
+                    <option value="Nagpur">Nagpur</option>
+                    <option value="Nager">Nager</option>
+                </select>
+                </label>
+                <label class="label-text-select" for="state">State
+                <select id="state" name="state">
+                    <option value="" disabled selected hidden>Select State</option>
+                    <option value="Maharashtra">Maharashtra</option>
+                    <option value="AP">AP</option>
+                    <option value="UP">UP</option>
+                    <option value="MP">MP</option>
+                    <option value="Assam">Assam</option>
+                    <option value="Goa">Goa</option>
+                </select>
+                </label>
+                <label class="label-text-select" for="zip">Zip Code
+                <input class="input" type="text" id="zipcode" name="zipcode" placeholder="Zip Code" required>
+                </label>
+            </div>
+        </form>
+    </form>
+    </div>
 </body>
 </html>
