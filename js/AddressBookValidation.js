@@ -14,15 +14,15 @@ window.addEventListener('DOMContentLoaded', (event) => {
         }
     });
 
-    const phoneNo = document.querySelector('#phonenumber');
+    const phoneNumber = document.querySelector('#phonenumber');
     const phoneError = document.querySelector('.phone-error');
-    phoneNo.addEventListener('input', function () {
-        if (phoneNo.value.length == 0) {
+    phoneNumber.addEventListener('input', function () {
+        if (phoneNumber.value.length == 0) {
             phoneError.textContent = "";
             return
         }
         try {
-            (new Contact()).phoneNumber = phoneNo.value;
+            (new Contact()).phonenumber = phoneNumber.value;
             phoneError.textContent = "";
         } catch (e) {
             phoneError.textContent = e;
@@ -44,3 +44,32 @@ window.addEventListener('DOMContentLoaded', (event) => {
         }
     });
 });
+
+/**UC6 
+ * clicking on submit button populating address book.
+ * adding to list and saving to list.
+*/
+
+const save = () => {
+    try{
+      let contact = saveData();
+      createAndUpdateStorage(contact);
+    }catch(e){
+      return;
+    }
+ };
+
+ function saveData(){
+    let contact = new Contact();
+    contact._fullName = getInputValueById('#fullName');
+    contact._address = getInputValueById('#address');
+    contact._phoneNumber = getInputValueById('#phonenumber');
+    contact._city = getInputValueById('#city');
+    contact._state = getInputValueById('#state');
+    contact._zip = getInputValueById('#zip');
+ }
+
+ const getInputValueById = (id) => {
+    let value = document.querySelector(id).value;
+    return value;
+}

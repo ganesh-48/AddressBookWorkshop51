@@ -6,7 +6,7 @@ body {
 
 body {
     background-color: lightgrey;
-    width: 1920px;
+    width: 1000px;
     height: 1080px;
     border: 1px solid rgb(231, 16, 149);
     padding: 1px;
@@ -206,10 +206,17 @@ select {
 
 .submitButton {
     background-color: rgb(248, 191, 180);
-    margin-left: 750px;
+    margin-left: 550px;
 }
 
 .resetButton {
     background-color: #6ee2ff;
     margin-left: 5px;
+}
+
+error-output {
+    margin-left: 10px;
+    font-size: 15px;
+    font-style: bold;
+    color: red;
 }
