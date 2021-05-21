@@ -45,6 +45,23 @@ window.addEventListener('DOMContentLoaded', (event) => {
     });
 });
 
+/**UC8
+ * Add the address book entry into an address book list.
+ * And store into local storage.
+ */
+function createAndUpdateStorage(addContactData) {
+
+    let contactDataList = JSON.parse(localStorage.getItem("ContactDataList"));
+
+    if(contactDataList != undefined) {
+        contactDataList.push(addContactData);
+    } else {
+        contactDataList = [addContactData];
+    }
+    alert(contactDataList.toString());
+    localStorage.setItem("ContactDataList", JSON.stringify(contactDataList));
+}
+
 /**UC6 
  * clicking on submit button populating address book.
  * adding to list and saving to list.
