@@ -31,27 +31,27 @@
                         <a href="D:\javascript\AddressBookWorkshop\AddressBook.html"><img class="cancel-img" src="D:\javascript\AddressBookWorkshop\cancel.jpg"></a>
                     </div>
                 </div>
-        </div>
-
+            </div>
+        
         
             <!--UC3 Creating fields as full name, phone number address, city, state and zip  -->
 
             <div class="row-content">
-                <label class="label text" for="fullname">Full Name
+                <label class="label text" for="fullname">Full Name<br>
                <input class="input" type="text" id="fullName" name="fullName" placeholder="" required>
                <error-output class="text-error" for="text"></error-output>
                </label>
             </div>
 
             <div class="row-content">
-                <label class="label text" for="phone">Phone Number
-                <input type="tel" id="tel" name="tel" class="input">
+                <label class="label text" for="phone">Phone Number<br>
+                <input type="phonenumber" id="phonenumber" name="phonenumber" class="input">
                 <error-output class ="text-error" for="text"></error-output>
                 </label>
             </div>
 
             <div class="row-content">
-                <label class="label text" for="address">Address
+                <label class="label text" for="address">Address<br>
                 <input class="input address-input" type="text" id="address" placeholder="" required>
                 <error-output class ="text-error" for="text"></error-output>
                 </label>
@@ -86,9 +86,15 @@
                 <input class="input" type="text" id="zipcode" name="zipcode" placeholder="Zip Code" required>
                 </label>
             </div>
-        </form>
-    </form>
-    </div>
+        
+            <div class="buttonParent">
+            <div class="submit-reset">
+                <button type="submit" class="button submitButton" id="submitButton">Add</button>
+                <button type="reset" class="button resetButton">Reset</button>
+            </div>   
+             </div>
+            </form> 
+        </div>
     <script src="D:\javascript\AddressBookWorkshop\js\AddressBookValidation.js"></script>
     <script src="D:\javascript\AddressBookWorkshop\js\Contacts.js"></script>
 </body>

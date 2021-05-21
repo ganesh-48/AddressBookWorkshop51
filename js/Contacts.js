@@ -2,7 +2,7 @@ class Contacts {
 
     get fullName() {return this._fullName;}
     set fullName(fullName) {
-        let fullNamePattern = RegExp('^[A-Z]{1}[a-z]{2,}$');
+        let fullNamePattern = RegExp('^([a-zA-Z0-9]+|[a-zA-Z0-9]+\s{1}[a-zA-Z0-9]{1,}|[a-zA-Z0-9]+\s{1}[a-zA-Z0-9]{3,}\s{1}[a-zA-Z0-9]{1,})$');
         if (fullNamePattern.test(fullName)) {
             this._fullName = fullName;
         }
