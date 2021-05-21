@@ -62,6 +62,6 @@ class Contacts {
 
     //method
     toString() {
-        return '[ FullName : ' + this.fullName + ' Address : '+ this.address + ' City : ' + this.city + ' State : ' + this.state + ' Zip : ' + this.zip +' Phone Number : ' + this.phoneNumber + ' ]';
+        return '[ FullName : ' + this.fullName + ' Address : '+ this.address + ' City : ' + this.city + ' State : ' + this.state + ' Zip : ' + this.zip +' Phone Number : ' + this.phonenumber + ' ]';
     }
 }

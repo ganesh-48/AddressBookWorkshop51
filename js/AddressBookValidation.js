@@ -45,6 +45,17 @@ window.addEventListener('DOMContentLoaded', (event) => {
     });
 });
 
+const save = (event) => {
+    try{
+        alert("object created");
+      let contact = saveData();
+      //alert("saved");
+      createAndUpdateStorage(contact);
+    }catch(e){
+      return;
+    }
+ };
+
 /**UC8
  * Add the address book entry into an address book list.
  * And store into local storage.
@@ -84,9 +95,25 @@ const save = () => {
     contact._city = getInputValueById('#city');
     contact._state = getInputValueById('#state');
     contact._zip = getInputValueById('#zip');
- }
+    return Contacts;
+}
 
  const getInputValueById = (id) => {
     let value = document.querySelector(id).value;
     return value;
+}
+
+/**UC9 Resetting the form by using RESET Button */
+const resetForm = () => {
+    setValue('#fullName','');
+    setValue('#address','');
+    setValue('#phonenumber','');
+    setValue('#city','');
+    setValue('#state','');
+    setValue('#zip','');
+}
+
+const setValue = (id , value) => {
+    const element = document.querySelector(id);
+    element.value = value;
 }
